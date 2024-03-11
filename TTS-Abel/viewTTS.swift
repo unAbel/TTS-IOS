@@ -42,6 +42,7 @@ struct viewTTS: View {
             }
             //Spacer()
         }
+        .shadow(radius: 3, x: -10, y: -10)
         .padding(15)
         .padding(.vertical, 50)
         .border(Color.blue, width: 4)

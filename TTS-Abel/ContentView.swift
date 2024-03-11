@@ -37,7 +37,8 @@ struct ContentView: View {
                         }.padding(50)
                     }
                 }
-            }       
+                .shadow(radius: 5, x: -10, y: -10)
+            }
         }
         .onAppear{
             Task{
@@ -50,11 +51,13 @@ struct ContentView: View {
 }
 
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
 
 struct Element: Codable, Hashable {
     let texto1: String
